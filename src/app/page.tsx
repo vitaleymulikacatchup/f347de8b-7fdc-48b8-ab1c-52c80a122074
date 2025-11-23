@@ -11,7 +11,7 @@ import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { Sparkles, Zap, Crown } from "lucide-react";
+import { Sparkles, Zap, Crown, Shield, Database } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -102,6 +102,28 @@ export default function LandingPage() {
               id: 2,
               title: "Seamless Integration",
               description: "Connect with your favorite tools and platforms effortlessly. Our API integrates with 500+ applications.",
+              phoneOne: {
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917348005-oogx1ip9.jpg"
+              },
+              phoneTwo: {
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917348671-ltmnktug.jpg"
+              }
+            },
+            {
+              id: 3,
+              title: "Enterprise Security",
+              description: "Bank-level security with end-to-end encryption, compliance certifications, and advanced access controls.",
+              phoneOne: {
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917346326-9xyysbnm.jpg"
+              },
+              phoneTwo: {
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917346999-5zko74sc.jpg"
+              }
+            },
+            {
+              id: 4,
+              title: "Smart Automation",
+              description: "Automate repetitive tasks and workflows with AI-powered automation that learns and adapts to your business.",
               phoneOne: {
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917348005-oogx1ip9.jpg"
               },
