@@ -11,7 +11,7 @@ import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { Sparkles, Zap, Crown, Star } from "lucide-react";
+import { Sparkles, Zap, Crown, Star, Lightbulb, Users, Target, CheckCircle } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -29,9 +29,9 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
-          brandName="SaaS Plus"
+          brandName="InnovateAI"
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917343062-seftrhvr.jpg"
-          logoAlt="SaaS Plus Logo"
+          logoAlt="InnovateAI Logo"
           button={{
             text: "Get Started",
             href: "contact"
@@ -43,8 +43,8 @@ export default function LandingPage() {
       
       <div id="hero" data-section="hero">
         <HeroCarouselLogo
-          logoText="SAAS PLUS"
-          description="Powerful software solutions designed to scale your business. Streamline workflows, boost productivity, and achieve your goals faster."
+          logoText="INNOVATE AI"
+          description="Revolutionary AI-powered platform that transforms how businesses operate. Automate processes, gain insights, and scale effortlessly with intelligent solutions."
           buttons={[
             {
               text: "Start Free Trial",
@@ -58,15 +58,15 @@ export default function LandingPage() {
           slides={[
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917343801-avar063w.jpg",
-              imageAlt: "Modern office workspace"
+              imageAlt: "AI dashboard interface"
             },
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917344605-yq6c3jai.jpg",
-              imageAlt: "Business team collaboration"
+              imageAlt: "Machine learning visualization"
             },
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917345423-qrd7xgls.jpg",
-              imageAlt: "Cloud infrastructure"
+              imageAlt: "AI automation workflow"
             }
           ]}
           autoplayDelay={5000}
@@ -76,21 +76,21 @@ export default function LandingPage() {
       
       <div id="about" data-section="about">
         <TagAbout
-          tag="Our Mission"
-          description="We empower businesses worldwide with intelligent software solutions. Our platform transforms how teams work, collaborate, and innovate. Built on trust, transparency, and relentless innovation."
+          tag="Our Vision"
+          description="At InnovateAI, we believe artificial intelligence should amplify human potential, not replace it. Our cutting-edge platform democratizes AI, making it accessible to businesses of all sizes. We're building the future where intelligent automation drives exponential growth."
         />
       </div>
       
       <div id="features" data-section="features">
         <FeatureCardNine
-          title="Powerful Features"
-          description="Everything you need to drive success"
-          tag="Why Choose Us"
+          title="Intelligent Features"
+          description="AI-powered tools that adapt to your business"
+          tag="Core Capabilities"
           features={[
             {
               id: 1,
-              title: "Real-time Analytics",
-              description: "Track your metrics in real-time with comprehensive dashboards that give you actionable insights instantly.",
+              title: "Smart Automation Engine",
+              description: "Advanced AI algorithms that learn your workflows and automate repetitive tasks with precision and reliability.",
               phoneOne: {
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917346326-9xyysbnm.jpg"
               },
@@ -100,8 +100,8 @@ export default function LandingPage() {
             },
             {
               id: 2,
-              title: "Seamless Integration",
-              description: "Connect with your favorite tools and platforms effortlessly. Our API integrates with 500+ applications.",
+              title: "Predictive Analytics",
+              description: "Harness the power of machine learning to forecast trends, predict outcomes, and make data-driven decisions with confidence.",
               phoneOne: {
                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917348005-oogx1ip9.jpg"
               },
@@ -114,7 +114,7 @@ export default function LandingPage() {
           textboxLayout="default"
           buttons={[
             {
-              text: "Explore Features",
+              text: "Explore AI Features",
               href: "pricing"
             }
           ]}
@@ -123,68 +123,69 @@ export default function LandingPage() {
       
       <div id="pricing" data-section="pricing">
         <PricingCardTwo
-          title="Simple, Transparent Pricing"
-          description="Choose the plan that fits your business needs. Upgrade to Professional for the most comprehensive features and best value."
+          title="AI-Powered Plans"
+          description="Choose your intelligence level. Our Pro plan offers the perfect balance of advanced AI capabilities and value for growing teams."
           tag="Pricing"
           plans={[
             {
-              id: "starter",
-              badge: "Starter",
-              price: "$29/month",
-              subtitle: "Perfect for getting started",
-              badgeIcon: Sparkles,
+              id: "basic",
+              badge: "Basic AI",
+              price: "$49/month",
+              subtitle: "Essential AI tools for small teams",
+              badgeIcon: Lightbulb,
               buttons: [
                 {
-                  text: "Get Started",
+                  text: "Start Basic",
                   href: "contact"
                 }
               ],
               features: [
-                "Up to 5 projects",
-                "Basic analytics",
-                "Email support",
-                "1GB storage"
+                "5 AI automation workflows",
+                "Basic predictive analytics",
+                "Standard support",
+                "10GB AI model storage"
               ]
             },
             {
-              id: "professional",
-              badge: "Professional - Most Popular",
-              price: "$79/month",
-              subtitle: "Best value for growing teams - Recommended",
+              id: "pro",
+              badge: "Pro AI - Recommended",
+              price: "$149/month",
+              subtitle: "Advanced intelligence for growing businesses",
               badgeIcon: Star,
               buttons: [
                 {
-                  text: "Start Free Trial",
+                  text: "Start Pro Trial",
                   href: "contact"
                 }
               ],
               features: [
-                "Unlimited projects",
-                "Advanced analytics",
-                "Priority support",
-                "50GB storage",
-                "Team collaboration tools"
+                "Unlimited AI workflows",
+                "Advanced ML analytics",
+                "Priority AI support",
+                "100GB model storage",
+                "Custom AI training",
+                "Multi-team collaboration"
               ]
             },
             {
               id: "enterprise",
-              badge: "Enterprise",
+              badge: "Enterprise AI",
               price: "Custom",
-              subtitle: "For large organizations",
+              subtitle: "Enterprise-scale artificial intelligence",
               badgeIcon: Crown,
               buttons: [
                 {
-                  text: "Contact Sales",
+                  text: "Contact AI Experts",
                   href: "contact"
                 }
               ],
               features: [
-                "Everything in Professional",
-                "Custom integrations",
-                "Dedicated support",
+                "Everything in Pro AI",
+                "Custom AI model development",
+                "Dedicated AI specialists",
                 "Unlimited storage",
-                "Advanced security",
-                "SLA guarantee"
+                "Advanced security & compliance",
+                "White-label solutions"
               ]
             }
           ]}
@@ -195,8 +196,8 @@ export default function LandingPage() {
       
       <div id="social-proof" data-section="social-proof">
         <SocialProofOne
-          title="Trusted by Industry Leaders"
-          description="Join thousands of companies that rely on SaaS Plus to drive their business forward"
+          title="Trusted by AI Innovators"
+          description="Leading companies worldwide trust InnovateAI to power their intelligent transformation"
           tag="Partners"
           logos={[
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917352516-4jnt8wty.jpg",
@@ -216,45 +217,45 @@ export default function LandingPage() {
       
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFour
-          title="What Our Customers Say"
-          description="Real stories from real users who've transformed their business with SaaS Plus"
-          tag="Testimonials"
+          title="AI Success Stories"
+          description="Discover how InnovateAI has revolutionized businesses with intelligent automation"
+          tag="Customer Stories"
           testimonials={[
             {
               id: "1",
-              name: "Sarah Johnson",
-              role: "CEO",
-              company: "TechCorp Inc",
+              name: "Dr. Sarah Chen",
+              role: "Chief Technology Officer",
+              company: "TechVision Labs",
               rating: 5,
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917349152-0wqk4e71.jpg",
-              imageAlt: "Sarah Johnson"
+              imageAlt: "Dr. Sarah Chen"
             },
             {
               id: "2",
-              name: "Michael Chen",
-              role: "CTO",
-              company: "InnovateLab",
+              name: "Marcus Thompson",
+              role: "AI Strategy Director",
+              company: "FutureScale Inc",
               rating: 5,
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917349732-qbke6hzq.jpg",
-              imageAlt: "Michael Chen"
+              imageAlt: "Marcus Thompson"
             },
             {
               id: "3",
-              name: "Emily Rodriguez",
-              role: "Product Director",
-              company: "GrowthCo",
+              name: "Elena Rodriguez",
+              role: "VP of Innovation",
+              company: "SmartSystems Corp",
               rating: 5,
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917350427-z7vbdfn8.png",
-              imageAlt: "Emily Rodriguez"
+              imageAlt: "Elena Rodriguez"
             },
             {
               id: "4",
-              name: "David Park",
-              role: "Founder",
-              company: "StartupXYZ",
+              name: "James Wilson",
+              role: "Founder & CEO",
+              company: "AI Dynamics",
               rating: 5,
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917350948-c7mf73va.jpg",
-              imageAlt: "David Park"
+              imageAlt: "James Wilson"
             }
           ]}
           textboxLayout="default"
@@ -263,39 +264,39 @@ export default function LandingPage() {
       
       <div id="faq" data-section="faq">
         <FaqDouble
-          title="Frequently Asked Questions"
-          description="Find answers to common questions about our platform, pricing, and support"
-          tag="Help Center"
+          title="AI Questions Answered"
+          description="Everything you need to know about our AI platform, from setup to advanced capabilities"
+          tag="AI Support"
           faqs={[
             {
               id: "1",
-              title: "How does the free trial work?",
-              content: "Start your free trial today with full access to all Professional features. No credit card required. Trial lasts 14 days and you can cancel anytime."
+              title: "How does the AI learning process work?",
+              content: "Our AI platform uses advanced machine learning algorithms to analyze your data and workflows. It continuously learns and adapts to your business patterns, becoming more intelligent over time. The initial setup takes just minutes, and you'll see improvements within the first week."
             },
             {
               id: "2",
-              title: "Can I change my plan anytime?",
-              content: "Yes, you can upgrade or downgrade your plan anytime. Changes take effect immediately, and we prorate charges fairly based on your usage."
+              title: "Is my data safe with AI processing?",
+              content: "Absolutely. We use enterprise-grade encryption and follow strict data privacy protocols. Your data is processed securely within isolated environments and never shared with third parties. We comply with GDPR, CCPA, and maintain SOC 2 Type II certification."
             },
             {
               id: "3",
-              title: "What payment methods do you accept?",
-              content: "We accept all major credit cards, PayPal, and bank transfers for Enterprise customers. All payments are processed securely."
+              title: "Can I customize the AI models?",
+              content: "Yes, our Pro and Enterprise plans allow you to train custom AI models specific to your business needs. Our AI experts can help you develop tailored solutions that integrate seamlessly with your existing workflows and systems."
             },
             {
               id: "4",
-              title: "Is my data secure?",
-              content: "Absolutely. We use enterprise-grade encryption, regular security audits, and comply with GDPR, CCPA, and SOC 2 Type II standards."
+              title: "What kind of ROI can I expect?",
+              content: "Our customers typically see 3-5x ROI within the first year through automation savings, improved efficiency, and better decision-making. The exact ROI depends on your use case, but our AI specialists can provide a customized ROI analysis during your trial."
             },
             {
               id: "5",
-              title: "Do you offer customer support?",
-              content: "Yes, all plans include email support. Professional and Enterprise plans get priority support and dedicated account managers."
+              title: "Do you provide AI training and support?",
+              content: "Yes, all plans include comprehensive AI training resources, documentation, and support. Pro and Enterprise customers get dedicated AI specialists, custom training sessions, and priority support to ensure successful implementation."
             },
             {
               id: "6",
-              title: "Can I export my data?",
-              content: "Yes, you can export all your data anytime in multiple formats including CSV, JSON, and PDF for compliance and backup purposes."
+              title: "Can I integrate with existing tools?",
+              content: "Our AI platform integrates with 1000+ business tools and platforms through APIs and pre-built connectors. Whether you use CRM, ERP, analytics, or communication tools, we can connect and enhance them with intelligent capabilities."
             }
           ]}
           animationType="smooth"
@@ -305,8 +306,8 @@ export default function LandingPage() {
       
       <div id="contact" data-section="contact">
         <ContactSplitForm
-          title="Ready to Get Started?"
-          description="Join thousands of successful companies. Start your free trial today and experience the difference SaaS Plus can make."
+          title="Ready to Transform with AI?"
+          description="Join the intelligence revolution. Start your AI journey today and discover how artificial intelligence can accelerate your business growth."
           inputs={[
             {
               name: "name",
@@ -329,28 +330,28 @@ export default function LandingPage() {
           ]}
           textarea={{
             name: "message",
-            placeholder: "Tell us about your needs...",
+            placeholder: "Tell us about your AI goals...",
             rows: 5,
             required: false
           }}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917351664-b4umte8t.jpg"
-          imageAlt="Customer success team"
+          imageAlt="AI specialists team"
           mediaPosition="right"
-          buttonText="Start Free Trial"
+          buttonText="Start AI Trial"
         />
       </div>
       
       <div id="footer" data-section="footer">
         <FooterBase
-          logoText="SaaS Plus"
+          logoText="InnovateAI"
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35ggfqwTaDTPV7ncegJJc94SZmR/uploaded-1763917343062-seftrhvr.jpg"
-          copyrightText="© 2025 SaaS Plus. All rights reserved."
+          copyrightText="© 2025 InnovateAI. All rights reserved."
           columns={[
             {
-              title: "Product",
+              title: "AI Platform",
               items: [
                 {
-                  label: "Features",
+                  label: "AI Features",
                   href: "features"
                 },
                 {
@@ -358,7 +359,7 @@ export default function LandingPage() {
                   href: "pricing"
                 },
                 {
-                  label: "Security",
+                  label: "AI Security",
                   href: "#"
                 },
                 {
@@ -371,11 +372,11 @@ export default function LandingPage() {
               title: "Company",
               items: [
                 {
-                  label: "About Us",
+                  label: "About AI",
                   href: "about"
                 },
                 {
-                  label: "Blog",
+                  label: "AI Blog",
                   href: "#"
                 },
                 {
@@ -392,7 +393,7 @@ export default function LandingPage() {
               title: "Resources",
               items: [
                 {
-                  label: "Documentation",
+                  label: "AI Documentation",
                   href: "#"
                 },
                 {
@@ -400,7 +401,7 @@ export default function LandingPage() {
                   href: "#"
                 },
                 {
-                  label: "Support",
+                  label: "AI Support",
                   href: "#"
                 },
                 {
