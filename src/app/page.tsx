@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
@@ -299,7 +299,6 @@ export default function LandingPage() {
             }
           ]}
           animationType="smooth"
-          showCard={true}
           textboxLayout="default"
         />
       </div>
