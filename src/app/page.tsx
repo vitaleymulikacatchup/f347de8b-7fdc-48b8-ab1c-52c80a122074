@@ -11,7 +11,7 @@ import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { Sparkles, Zap, Crown } from "lucide-react";
+import { Sparkles, Zap, Crown, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -124,7 +124,7 @@ export default function LandingPage() {
       <div id="pricing" data-section="pricing">
         <PricingCardTwo
           title="Simple, Transparent Pricing"
-          description="Choose the plan that fits your business needs. Scale up or down anytime."
+          description="Choose the plan that fits your business needs. Upgrade to Professional for the most comprehensive features and best value."
           tag="Pricing"
           plans={[
             {
@@ -148,10 +148,10 @@ export default function LandingPage() {
             },
             {
               id: "professional",
-              badge: "Professional",
+              badge: "Professional - Most Popular",
               price: "$79/month",
-              subtitle: "Best for growing teams",
-              badgeIcon: Zap,
+              subtitle: "Best value for growing teams - Recommended",
+              badgeIcon: Star,
               buttons: [
                 {
                   text: "Start Free Trial",
